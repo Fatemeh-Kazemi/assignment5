@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 600px;
+    background: rgb(85,125,255);
+    background: linear-gradient(360deg, rgb(71, 114, 253) 0%, rgb(253, 97, 219) 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+.text-center{
+    text-align: center;
+}
+.title{
+    color: black;
+    margin-top: 30px;
+}
+
+/********************* Login box style **********************/
+.login-box{
+    width: 25vw;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 8px 8px rgba(204, 204, 204, 0.5);
+}
+
+/********************* Form style **********************/
+.login-box form{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+form .email-inp, form .password-inp{
+    width: 100%;
+    height: 40px;
+    background: rgba(204, 204, 204, 0.5);
+    border: 1px solid rgb(192, 192, 192);
+    outline: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+form input[type="email"], form input[type="password"]{
+    width: 90%;
+    background: transparent;
+    border: none;
+    outline: 0;
+    padding: 2px 10px;
+}
+form input[type="checkbox"]{
+    background-color: red;
+}
+form input[type="checkbox"]:checked {
+    border-color: red;
+    background-color:red;
+}
+
+button.login{
+    width: 100%;
+    background-color: rgba(251,120,222,1);
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+button.login:hover{
+    transition: all .5s;
+    background: rgb(253, 44, 208);
+    box-shadow: 5px 5px 5px rgba(85,125,255,0.5);
+}
+
+.login-another-acc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.another-acc-box{
+    width: 120px;
+    height: 40px;
+    border: 1px solid rgb(170, 170, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px 10px;
+    transition: all 0.5s;
+}
+.another-acc-box:hover{
+    box-shadow: 5px 8px 10px rgb(133, 133, 133,0.5);
+}
+.login-another-acc img.logo-icon{
+    width: 25px;
+}
+img.logo-text{
+    width: 50px;
+}
+.question a{
+    color: gray;
+}
